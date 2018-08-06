@@ -1,0 +1,22 @@
+<!--pages/one/one.wxml-->
+<view>
+  <swiper vertical='true' class='goods-list' bindchange='play'>
+  
+    <swiper-item  wx:for='{{videoList}}' wx:key='index'>
+   
+      <swiper class='goods'>
+       <swiper-item class='good'>
+            <video autoplay='{{item.auto}}' src='{{item.video}}'></video>
+       </swiper-item>
+          <swiper-item class='good-detail'>
+             <image src='{{item.detail}}'></image>
+          </swiper-item>
+         
+      </swiper>
+    
+    </swiper-item>
+   
+    
+
+</swiper>
+</view>
